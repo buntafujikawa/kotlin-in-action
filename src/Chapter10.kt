@@ -1,4 +1,5 @@
 //　アノテーションの適用と定義
+// 追加のメタデータをクラスや関数などの宣言に関連づけできる
 
 import org.junit.*
 import kotlin.reflect.KClass
@@ -17,7 +18,7 @@ fun testMethod() {
 
 
 class HasTempFolder {
-    @get:Rule // getterにアノテーションがついている
+    @get:Rule // getterにアノテーションがついている、使用場所対象の一覧はP337
     val folder = TemporaryFolder()
 
     @Test
